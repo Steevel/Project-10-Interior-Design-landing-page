@@ -74,11 +74,12 @@ nav {
 
 /* Hero section  */
 .hero {
-    padding: clamp(2rem, 1rem + 10vw, 4rem);
+    padding: 2em;
 }
 
 .hero-title {
     font-size: 4em;
+    /* font-size: clamp(2rem, 1rem + 10vw, 4rem); */
     margin-left: 1.5em;
 }
 
@@ -176,9 +177,8 @@ nav {
 }
 
 /* Media Query for tablet devices  */
-@media (min-width: 427px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     body {
-        /* margin: 0; */
         background-size: 160vw 166vh;
         background-position: center;
         height: 100%;
@@ -233,7 +233,7 @@ nav {
 }
 
 /* Media Query for mobile devices  */
-@media (max-width: 40em) {
+@media (max-width: 425px) {
     body {
         background-size: 86vh 100vh;
         background-position: center;
@@ -263,13 +263,22 @@ nav {
         padding: 0;
     }
 
+    .hero-title {
+        font-size: 3em;
+        margin-left: 0.5em;
+    }
+
+    .title-break {
+        display: none;
+    }
+
     .hero-btn {
         font-size: 12px;
         margin-left: 2.6em
     }
 
     .top-div {
-        top: 40%;
+        top: 44%;
     }
 
     .top-card {
@@ -286,7 +295,7 @@ nav {
 
     .bottom-div {
         position: absolute;
-        right: 5%;
+        right: 12%;
         top: 72%;
     }
 
